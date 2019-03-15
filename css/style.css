@@ -1,0 +1,26 @@
+#characters {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+
+#leaderboard {
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+
+.dead, .alive {
+    float: left;
+    padding: 7px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.dead {
+    opacity: .45;
+}
+
+img {
+    width: 300px;
+}
