@@ -1,17 +1,21 @@
 (function(){
 
     const characters = [
-        { name: 'tyrion', displayName:'Tyrion Lannister', alive: true, 
-        pic:'https://media.giphy.com/media/2wYYlHuEw1UcsJYgAA/giphy.gif'},
-        { name: 'cersei', displayName:'Cersei Lannister', alive: false, 
+        { name: 'cersei', displayName:'Cersei Lannister', alive: true, 
         pic:'https://media.giphy.com/media/l41YedIbenuBH6ljO/giphy.gif'},
         { name: 'jaime', displayName:'Jaime Lannister', alive: true, 
         pic:'https://media.giphy.com/media/3oEjHJi8gFAyxl7rS8/giphy.gif'},
+        { name: 'dany', displayName:'Daenerys Targaryen', alive: true, 
+        pic:'https://media.giphy.com/media/FeCnyfbplY3uw/giphy.gif'},
+        { name: 'jon', displayName:'Jon Snow', alive: true, 
+        pic:'https://media.giphy.com/media/3oEhmNvHo1pNMUIcJa/giphy.gif'},
+        { name: 'tyrion', displayName:'Tyrion Lannister', alive: true, 
+        pic:'https://media.giphy.com/media/2wYYlHuEw1UcsJYgAA/giphy.gif'},
     ];
 
     const deadpool = [
         { name: 'Kaitlynn', deadPicks: ['cersei']},
-        { name: 'Rachael', deadPicks: ['tyrion']}
+        { name: 'Rachael', deadPicks: []}
     ];
 
     function buildCharacterList (){
@@ -22,7 +26,7 @@
         }, '');
     }
 
-    function getCharacterPoints(character, player){
+    function getPointsForCharacter(character, player){
         const picked = player.deadPicks.includes(character.name);
         let points;
         if (picked){
@@ -33,13 +37,27 @@
         return points;
     }
 
-    function buildLeaderboard(){
-        return deadpool.reduce(function(html, player){
-            const totalPoints = characters.reduce(function(points, character){
-                return points + getCharacterPoints(character, player);
-            },0);
+    function getPlayerPoints(player){
+        player.points = characters.reduce(function(points, character){
+            return points + getPointsForCharacter(character, player);
+        },0);
+        return player;
+    }
 
-            return html + '<div>'+player.name +' '+ totalPoints +'</div>';
+    function winOrDie(a, b){
+        if (a.points < b.points) {
+            return 1;
+          }
+          if (a.points > b.points) {
+            return -1;
+          }
+          // tied
+          return 0;
+    }
+
+    function buildLeaderboard(){
+        return deadpool.map(getPlayerPoints).sort(winOrDie).reduce(function(html, player){
+            return html + '<div>'+player.name +' '+ player.points +'</div>';
 
         },'');
 
