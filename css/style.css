@@ -24,3 +24,7 @@
 img {
     width: 300px;
 }
+
+hr {
+    clear: right;
+}

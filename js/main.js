@@ -7,11 +7,11 @@
         pic:'https://media.giphy.com/media/8diAPjcZ804HC/giphy.gif'},
         { name: 'worm', displayName:'Grey Worm', alive: true, 
         pic:'https://media.giphy.com/media/vD1N7jAAphkf6/giphy.gif'},
-        { name: 'varys', displayName:'Lord Varys', alive: false, 
+        { name: 'varys', displayName:'Lord Varys', alive: true, 
         pic:'https://media.giphy.com/media/QnrntWsC4EYwg/giphy.gif'},
         { name: 'jon', displayName:'Jon Snow', alive: true, 
         pic:'https://media.giphy.com/media/3oEhmNvHo1pNMUIcJa/giphy.gif'},
-        { name: 'davos', displayName:'Ser Davos Seaworth', alive: false, 
+        { name: 'davos', displayName:'Ser Davos Seaworth', alive: true, 
         pic:'https://media.giphy.com/media/HuZJDiljIph3G/giphy.gif'},
         { name: 'sansa', displayName:'Sansa Stark', alive: true, 
         pic:'https://media.giphy.com/media/kmrlRUii2gKic/giphy.gif'},
@@ -86,8 +86,15 @@
     ];
 
     const deadpool = [
-        { name: 'Kaitlynn', deadPicks: ['cersei']},
-        { name: 'Rachael', deadPicks: []}
+        { name: 'Kaitlynn', deadPicks: []},
+        { name: 'Jennifer', deadPicks: []},
+        { name: 'Ellen', deadPicks: []},
+        { name: 'Rachael', deadPicks: []},
+        { name: 'Swogger', deadPicks: []},
+        { name: 'Erin', deadPicks: []},
+        { name: 'Soper', deadPicks: []},
+        { name: 'Pinizzotto', deadPicks: []},
+        { name: 'Larry', deadPicks: []}
     ];
 
     function buildCharacterList (){
