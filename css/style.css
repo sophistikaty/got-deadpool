@@ -21,8 +21,22 @@
     opacity: .35;
 }
 
+h4 {
+    margin: 10px 0 0;
+}
+
 img {
     width: 300px;
+}
+
+div.quote {
+    position: relative;
+    bottom: 60px;
+    color: #fff;
+    width: 285px;
+    font-style: italic;
+    font-size: 15px;
+    margin: 0 10px;
 }
 
 hr {

@@ -3,6 +3,10 @@
     const characters = [
         { name: 'dany', displayName:'Daenerys Targaryen', alive: true, 
         pic:'https://media.giphy.com/media/59HdZnEvQC6xW/giphy.gif'},
+        { name: 'drogon', displayName:'Drogon', alive: true, 
+        pic:'https://media.giphy.com/media/26Bnc1dYtp3SvCfDi/giphy.gif'},
+        { name: 'rhaegal', displayName:'Rhaegal', alive: true, 
+        pic:'https://media.giphy.com/media/3o7aD7sVU7LEsLBcRO/giphy.gif'},
         { name: 'missandei', displayName:'Missandei', alive: true, 
         pic:'https://media.giphy.com/media/8diAPjcZ804HC/giphy.gif'},
         { name: 'worm', displayName:'Grey Worm', alive: true, 
@@ -10,19 +14,28 @@
         { name: 'varys', displayName:'Lord Varys', alive: true, 
         pic:'https://media.giphy.com/media/QnrntWsC4EYwg/giphy.gif'},
         { name: 'jon', displayName:'Jon Snow', alive: true, 
-        pic:'https://media.giphy.com/media/3oEhmNvHo1pNMUIcJa/giphy.gif'},
+        pic:'https://media.giphy.com/media/3oEhmNvHo1pNMUIcJa/giphy.gif',
+        quote:'The true enemy won\'t wait out the storm. The true enemy brings the storm.'},
+        { name: 'ghost', displayName:'Ghost', alive: true, 
+        pic:'https://media.giphy.com/media/rqtC5ziN07fO/giphy.gif'},
         { name: 'davos', displayName:'Ser Davos Seaworth', alive: true, 
         pic:'https://media.giphy.com/media/HuZJDiljIph3G/giphy.gif'},
+        { name: 'arya', displayName:'Arya Stark', alive: true, 
+        pic:'https://media.giphy.com/media/25aH3LlslgXcsO9rMq/giphy.gif',
+        quote:'My name is Arya Stark. I want you to know that.'},
+        { name: 'nymeria', displayName:'Nymeria', alive: true, 
+        pic:'https://media.giphy.com/media/4d4HEGpLiwTQc/giphy.gif'},
         { name: 'sansa', displayName:'Sansa Stark', alive: true, 
         pic:'https://media.giphy.com/media/kmrlRUii2gKic/giphy.gif'},
-        { name: 'arya', displayName:'Arya Stark', alive: true, 
-        pic:'https://media.giphy.com/media/25aH3LlslgXcsO9rMq/giphy.gif'},
         { name: 'bran', displayName:'Bran Stark', alive: true, 
-        pic:'https://media.giphy.com/media/xUA7b4Ma73w36UwsgM/giphy.gif'},
+        pic:'https://media.giphy.com/media/xUA7b4Ma73w36UwsgM/giphy.gif',
+        quote:'I\'m the three eyed raven now. I have to be ready.'},
         { name: 'sam', displayName:'Samwell Tarly', alive: true, 
         pic:'https://media.giphy.com/media/iU7QUbHXVsS2s/giphy.gif'},
         { name: 'brienne', displayName:'Brienne of Tarth', alive: true, 
         pic:'https://media.giphy.com/media/R9B9P4hRMYJr2/giphy.gif'},
+        { name: 'pod', displayName:'Podrick Payne', alive: true, 
+        pic:'https://media.giphy.com/media/lgtxDYbF00AIE/giphy.gif'},
         { name: 'tyrion', displayName:'Tyrion Lannister', alive: true, 
         pic:'https://media.giphy.com/media/ZFJYcVE5lYvWE/giphy.gif'},
         { name: 'jaime', displayName:'Jaime Lannister', alive: true, 
@@ -33,8 +46,6 @@
         pic:'https://media.giphy.com/media/7FBvgMbMuXbcA/giphy.gif'},
         { name: 'mountain', displayName:'The Mountain | Ser Gregor Clegane', alive: true, 
         pic:'https://media.giphy.com/media/xUPGcwPoY3UVv8CxEs/giphy.gif'},
-        { name: 'pod', displayName:'Podrick Payne', alive: true, 
-        pic:'https://media.giphy.com/media/lgtxDYbF00AIE/giphy.gif'},
         { name: 'theon', displayName:'Theon Greyjoy', alive: true, 
         pic:'https://media.giphy.com/media/HDeftQBY6MCw8/giphy.gif'},
         { name: 'gilly', displayName:'Gilly', alive: true, 
@@ -55,6 +66,8 @@
         pic:'https://media.giphy.com/media/qUXkGxDDSF9CM/giphy.gif'},
         { name: 'gendry', displayName:'Gendry', alive: true, 
         pic:'https://media.giphy.com/media/xCfFTAKlnXYaI/giphy.gif'},
+        { name: 'ellaria', displayName:'Ellaria Sand', alive: true, 
+        pic:'https://media.giphy.com/media/3o6ozubtomwzbU6msM/giphy.gif'},
         { name: 'hot', displayName:'Hot Pie', alive: true, 
         pic:'https://media.giphy.com/media/xUPGGvsAOBIISZLGIo/giphy.gif'},
         { name: 'royce', displayName:'Lord Yohn Royce', alive: true, 
@@ -66,7 +79,8 @@
         { name: 'edmure', displayName:'Edmure Tully', alive: true, 
         pic:'https://media.giphy.com/media/6xiWvAz8eZnwI/giphy.gif'},
         { name: 'lyanna', displayName:'Lyanna Mormont', alive: true, 
-        pic:'https://media.giphy.com/media/TLlVi05a0t8Eo/giphy.gif'},
+        pic:'https://media.giphy.com/media/TLlVi05a0t8Eo/giphy.gif',
+        quote:'I\'m every bit as much a Northerner as you, and I don\'t need your permission to defend the North.'},
         { name: 'alys', displayName:'Alys Karstark', alive: true, 
         pic:'https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/701_Alys_and_Ned.png/revision/latest?cb=20170826013858'},
         { name: 'umber', displayName:'Ned Umber', alive: true, 
@@ -76,7 +90,8 @@
         { name: 'yara', displayName:'Yara Greyjoy', alive: true, 
         pic:'https://media.giphy.com/media/WTwyyqxj673J6/giphy.gif'},
         { name: 'euron', displayName:'Euron Greyjoy', alive: true, 
-        pic:'https://media.giphy.com/media/3o6EhUARFFcxv0LaRq/giphy.gif'},
+        pic:'https://media.giphy.com/media/3o6EhUARFFcxv0LaRq/giphy.gif',
+        quote:'So here I am, with a thousand ships and two good hands.'},
         { name: 'aeron', displayName:'Aeron Greyjoy', alive: true, 
         pic:'https://media.giphy.com/media/8dh7Guwlgrp4s/giphy.gif'},
         { name: 'daario', displayName:'Daario Naharis', alive: true, 
@@ -100,8 +115,10 @@
     function buildCharacterList (){
         return characters.reduce(function(html, character) {
             const deadClass = character.alive ? 'alive' : 'dead';
-            return html + '<div class ="' + deadClass + '">' 
-            + character.displayName + '<div><img src="' + character.pic + '"></div></div>';
+            const quote = character.quote || '';
+            return html + '<div class ="' + deadClass + '"><h4>' 
+            + character.displayName + '</h4><div><img src="' + character.pic 
+            + '"></div><div class="quote">'+ quote +'</div></div>';
         }, '');
     }
 
