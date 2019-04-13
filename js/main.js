@@ -3,11 +3,13 @@
     const arya = 'arya';
     const baby = 'baby';
     const beric = 'beric';
+    const bran = 'bran';
     const brienne = 'brienne';
     const bronn = 'bronn';
     const cersei = 'cersei';
     const dany = 'dany';
     const davos = 'davos';
+    const daario = 'daario';
     const edd = 'edd';
     const ellaria = 'ellaria';
     const euron = 'euron';
@@ -16,6 +18,7 @@
     const jaime = 'jaime';
     const jaqen = 'jaqen';
     const jon = 'jon';
+    const jorah = 'jorah';
     const meera = 'meera';
     const melisandre = 'melisandre';
     const missandei = 'missandei';
@@ -25,10 +28,12 @@
     const qyburn = 'qyburn';
     const rhaegal = 'rhaegal';
     const robin = 'robin';
+    const sansa = 'sansa';
     const theon = 'theon';
     const tormund = 'tormund';
     const varys = 'varys';
     const worm = 'worm';
+    const yara = 'yara';
 
 
     const characters = [
@@ -56,9 +61,9 @@
         quote:'My name is Arya Stark. I want you to know that.'},
         { name: 'nymeria', displayName:'Nymeria', alive: true, 
         pic:'https://media.giphy.com/media/4d4HEGpLiwTQc/giphy.gif'},
-        { name: 'sansa', displayName:'Sansa Stark', alive: true, 
+        { name: sansa, displayName:'Sansa Stark', alive: true, 
         pic:'https://media.giphy.com/media/kmrlRUii2gKic/giphy.gif'},
-        { name: 'bran', displayName:'Bran Stark', alive: true, 
+        { name: bran, displayName:'Bran Stark', alive: true, 
         pic:'https://media.giphy.com/media/xUA7b4Ma73w36UwsgM/giphy.gif',
         quote:'I\'m the three eyed raven now. I have to be ready.'},
         { name: night, displayName:'Night King', alive: true, 
@@ -86,7 +91,7 @@
         pic:'https://media.giphy.com/media/3oD3YP9t2vJfQmFK1O/giphy.gif'},
         { name: baby, displayName:'Little Sam', alive: true, 
         pic:'https://media.giphy.com/media/3oD3YP9t2vJfQmFK1O/giphy.gif'},
-        { name: 'jorah', displayName:'Ser Jorah Mormont', alive: true, 
+        { name: jorah, displayName:'Ser Jorah Mormont', alive: true, 
         pic:'https://media.giphy.com/media/McpFk5rscOMuc/giphy.gif'},
         { name: bronn, displayName:'Ser Bronn', alive: true, 
         pic:'https://media.giphy.com/media/VXexNhYpY99NC/giphy.gif'},
@@ -121,7 +126,7 @@
         pic:'https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/701_Alys_and_Ned.png/revision/latest?cb=20170826013858'},
         { name: edd, displayName:'Dolorous Edd', alive: true, 
         pic:'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fwinteriscoming.net%2Ffiles%2F2016%2F05%2FDolorous-Edd-Official.jpg&c=sc&w=850&h=560'},
-        { name: 'yara', displayName:'Yara Greyjoy', alive: true, 
+        { name: yara, displayName:'Yara Greyjoy', alive: true, 
         pic:'https://media.giphy.com/media/WTwyyqxj673J6/giphy.gif',
         quote:'I didn\'t demand anything, but I\'m up for anything really.'},
         { name: euron, displayName:'Euron Greyjoy', alive: true, 
@@ -129,7 +134,7 @@
         quote:'So here I am, with a thousand ships and two good hands.'},
         { name: 'aeron', displayName:'Aeron Greyjoy', alive: true, 
         pic:'https://media.giphy.com/media/8dh7Guwlgrp4s/giphy.gif'},
-        { name: 'daario', displayName:'Daario Naharis', alive: true, 
+        { name: daario, displayName:'Daario Naharis', alive: true, 
         pic:'https://media.giphy.com/media/EDadrPgXdgXDO/giphy.gif'},
         { name: jaqen, displayName:'Jaqen Hghar', alive: true, 
         pic:'https://media.giphy.com/media/dS2iet9uDklk4/giphy.gif',
@@ -147,7 +152,9 @@
         { name: 'Katelyn Thomas', deadPicks: [rhaegal, worm, night, baby, melisandre, robin, euron, hound, cersei, qyburn]},
         { name: 'Rachael', deadPicks: [cersei, jaime, arya, euron, varys, mountain, worm, beric, ellaria, melisandre]},
         { name: 'Swogger', deadPicks: [dany, worm, varys, jaime, cersei, mountain, beric, melisandre, meera, euron]},
-        { name: 'Pinizzotto', deadPicks: [mountain, qyburn, robin, meera, jon, cersei, jaime, ghost, beric, euron]}
+        { name: 'Pinizzotto', deadPicks: [mountain, qyburn, robin, meera, jon, cersei, jaime, ghost, beric, euron]},
+        { name: 'Kirby', deadPicks: [davos, brienne, pod, jaime, theon, jorah, bronn, yara, euron, daario]},
+        { name: 'Michelle', deadPicks: [varys, sansa, cersei, mountain, melisandre, euron, jorah, hound, bran, dany]}
     ];
 
     function buildCharacterList (){
