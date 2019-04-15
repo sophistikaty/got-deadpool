@@ -122,7 +122,7 @@
         quote:'I don\'t need your permission to defend the North.'},
         { name: 'alys', displayName:'Alys Karstark', alive: true, 
         pic:'https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/701_Alys_and_Ned.png/revision/latest?cb=20170826013858'},
-        { name: 'umber', displayName:'Ned Umber', alive: true, 
+        { name: 'umber', displayName:'Ned Umber', alive: false, 
         pic:'https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/701_Alys_and_Ned.png/revision/latest?cb=20170826013858'},
         { name: edd, displayName:'Dolorous Edd', alive: true, 
         pic:'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fwinteriscoming.net%2Ffiles%2F2016%2F05%2FDolorous-Edd-Official.jpg&c=sc&w=850&h=560'},
