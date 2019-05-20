@@ -37,7 +37,7 @@
 
 
     const characters = [
-        { name: dany, displayName:'Daenerys Targaryen', alive: true, 
+        { name: dany, displayName:'Daenerys Targaryen', alive: false, 
         pic:'https://media.giphy.com/media/59HdZnEvQC6xW/giphy.gif'},
         { name: 'drogon', displayName:'Drogon', alive: true, 
         pic:'https://media.giphy.com/media/26Bnc1dYtp3SvCfDi/giphy.gif'},
